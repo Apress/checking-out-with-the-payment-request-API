@@ -1,0 +1,412 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  background: steelblue;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  overflow: hidden;
+  height: 320px;
+  width: 550px;
+  background-color: red;
+  background-image: url(../images/background.png);
+}
+
+.header a {
+  color: inherit;
+}
+
+.header a:hover {
+  font-weight: bold;
+}
+
+.header-logo {
+  float: left;
+  font-size: 30px;
+  color: #fff;
+  border-bottom: 4px solid #fff;
+  display: block;
+  width: 100%;
+  margin: 20px;
+  background-color: rgba(0,0,0, 0.4)
+}
+
+.header-nav {
+  float: right;
+  margin-right: -40px;
+}
+
+.header-nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 260px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.product span {
+  font-weight: bold;
+}
+
+.product-image img {
+  display: block;
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row .product:last-child {
+  margin-right: 0;
+}
+
+.product-add-to-cart {
+  overflow: hidden;
+  clear: both;
+  margin-top: 10px;
+}
+
+.see-more {
+  float: left;
+  background: indianred;
+}
+
+.add-to-cart {
+  float: right;
+  cursor: pointer;
+}
+
+.shopping-cart {
+  width: 250px;
+  margin-top: -300px;
+  padding: 20px;
+  background: wheat;
+  float: right;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.shopping-cart-head {
+  color: white;
+  padding: 5px;
+  float: right;
+  margin-top: -10px;
+}
+
+.shopping-cart,
+.shopping-cart-head {
+  border-radius: 5px;
+}
+
+.shopping-cart-list {
+  clear: both;
+}
+
+div.shopping-cart > ul > li {
+  list-style: none;
+  margin-left: -35px;
+}
+
+.itemlist {
+  width: 150px;
+  display: inline-block;
+}
+
+.subtotal {
+  display: inline-block;
+}
+
+.empty-cart-btn,
+.cart-checkout {
+  display: none;
+}
+
+.empty-cart-btn {
+  margin-bottom: 5px;
+  width: 40px;
+  float: right;
+  margin-top: -39px;
+  height: 40px;
+  padding: 5px;
+  background-color: indianred;
+}
+
+.cart-checkout {
+  background: rgb(194, 192, 198);
+  width: 73%;
+  color: #000000;
+  font-size: 16px;
+}
+
+.product-quantity {
+  background-color: red;
+  border-radius: 44px;
+  padding: 5px;
+  float: left;
+  width: 28px;
+  text-align: center;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 46px;
+}
+
+.total-price {
+  width: 55%;
+  display: inline-block;
+  text-align: right;
+}
+
+/* Menu and Account*/
+#menu, #account {
+  border: 1px solid #ffffff;
+  background-color: white;
+  display: inline-block;
+  padding: 5px 10px 5px 15px;
+  background-image: url('../images/hamburger.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 30px;
+  font-weight: bold;
+}
+
+#menu {
+  width: 100px;
+  margin-right: 20px
+}
+
+#account {
+  margin-right: 70px;
+  width: 130x;
+}
+
+.itemlist {
+  width: 150px;
+}
+
+/* Search */
+#search {
+  border-bottom: 1px solid #f4f4f4;
+  padding: 5px;
+  display: block;
+  background-color: rgb(194, 192, 198);
+}
+
+.search {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 45px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.search-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.search-input {
+  display: inline-block;
+  transition: box-shadow .4s ease, background .4s ease;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 2px #CCCCCC;
+  background: #FFFFFF;
+  padding: 0;
+  padding-right: 72px;
+  padding-left: 22px;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  white-space: normal;
+  font-size: inherit;
+}
+
+.search-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: inherit;
+  margin: 0;
+  border: 0;
+  border-radius: 0 25px 25px 0;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0;
+  width: 45px;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: inherit;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.search-submit::before {
+  display: inline-block;
+  margin-right: -4px;
+  height: 100%;
+  vertical-align: middle;
+  content: '';
+}
+
+.search-submit:hover, .search-submit:active {
+  cursor: pointer;
+}
+
+.search-submit:focus {
+  outline: 0;
+}
+
+.search-submit svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  fill: #FF2E83;
+}
+
+.search-reset {
+  display: none;
+  position: absolute;
+  top: 9px;
+  right: 45px;
+  margin: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.search-reset:focus {
+  outline: 0;
+}
+
+.search-reset svg {
+  display: block;
+  margin: 4px;
+  width: 19px;
+  height: 19px;
+}
+
+.pay-button {
+  width: 210px;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0px;
+  background-color: steelblue;
+  display: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  height: 30px;
+  color: #ffffff;
+  border-radius: 4px;
+  line-height: 30px;
+}
+
+.pay-button:hover {
+  cursor: pointer;
+}
+
+#message {
+  float: right;
+  margin-top: -75px;
+  width: 250px;
+  display: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#message.success {
+  background-color: #ace1af;
+  color: #008000;
+  display: block;
+}
+
+#message.success > span {
+  float: left;
+  font-size: 30px;
+  color: #008000;
+  padding: 0px 10px;
+  line-height: 40px;
+  line-height: 35px;
+}
+
+#message.failure {
+  background-color: #FFD1DC;
+  color: #ff0000;
+  display: block;
+}
+
+#message.failure > span {
+  float: left;
+  font-size: 30px;
+  color: red;
+  padding: 0px 10px;
+  line-height: 40px;
+  line-height: 35px;
+}
+
+#message.info {
+  background-color: #FCF75E;
+  display: block;
+  color: #000000;
+  line-height: 20px;
+}
+
+#message.info > span {
+  float: left;
+  font-size: 30px;
+  color: #000000;
+  padding: 0px 10px;    
+  line-height: 35px;
+}

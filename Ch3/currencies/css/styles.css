@@ -1,0 +1,134 @@
+body, html {
+  background-color: #fff;
+  height: 100%;
+  width: 335px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+}
+
+img, div {
+  margin: 0 auto;
+  display: block;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+h1 {
+  display: block;
+  border-bottom: 1px solid #c21807;
+}
+
+h3, label {
+  font-weight: 700;
+  font-size: 23px;
+}
+
+img {
+  width: 261px;  
+}
+
+input {
+  width: 50px; 
+  float: right;
+}
+
+span {
+  float: right;
+  color: #c21807;
+}
+
+.pay-button {
+  background-color: white;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 16px 32px;
+  width: 170px;
+  background-color: #c21807;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 20px 0 0 170px;
+  display: block;
+}
+
+.pay-button:hover {
+  background-color: #f31e09;
+}
+
+.pay-button:focus {
+  outline: 0;
+}
+
+.currency {
+  margin-top: -50px;
+  margin-left: 240px;
+  position: absolute;
+  color: #c21807;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+#subTotalText, #unitcost {
+  margin-top: -50px;
+  float: right;
+  color: #c21807;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+#message {
+  float: left;
+  margin-top: 10px;
+  width: 320px;
+  display: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#message.success {
+  background-color: #ace1af;
+  color: #008000;
+  display: block;
+}
+
+#message.success > span {
+  float: left;
+  font-size: 30px;
+  color: #008000;
+  padding: 0px 10px;
+  line-height: 40px;
+}
+
+#message.failure {
+  background-color: #FFD1DC;
+  color: #ff0000;
+  display: block;
+}
+
+#message.failure > span {
+  float: left;
+  font-size: 30px;
+  color: red;
+  padding: 0px 10px;
+  line-height: 40px;
+}
+
+#message.info {
+  background-color: #FCF75E;
+  display: block;
+  color: #000000;
+  line-height: 20px;
+}
+
+#message.info > span {
+  float: left;
+  font-size: 30px;
+  color: #000000;
+  padding: 0px 10px;    
+  line-height: 20px;
+}

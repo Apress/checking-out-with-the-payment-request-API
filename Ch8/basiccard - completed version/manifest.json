@@ -1,0 +1,8 @@
+{
+  "name": "Pay with CoffeePay",
+  "icons": [{
+      "src": "images/coffee.png",
+      "sizes": "600x600",
+      "type": "image/png"
+  }]
+}

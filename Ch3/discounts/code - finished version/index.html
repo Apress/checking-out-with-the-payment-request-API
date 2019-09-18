@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <div>
+    <h1>Cart</h1>
+    <div id="discount">Buy 10, get 20% off!</div>
+    <img src="images/chillis.png"/>
+
+    <h3 class="product">Product:<span>Bag of red chillis</span></h3>
+    <h3 class="price">Price:<span>$4.99</span></h3>
+    <label for="amount">Quantity</label>
+    <input id="amount" type="number" value="0" min="0">
+    <div id="getmore">Add 2 more to get discount....</div>
+    <h3 class="price">SubTotal:</h3>
+    <h3><div class="currency">$</div><div id="subTotalText">0.00</div></h3>
+    <button class="pay-button">Buy Chillis</button>
+    <div id="message"></div>
+  </div>
+  <script src="js/payment.js"></script>
+</body>
+</html>

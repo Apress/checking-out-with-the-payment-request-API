@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LoveCoffee.club | The Home of Great Coffee</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="icon" href="favicon.png" sizes="512x512" type="image/png">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h3 class="header-logo">LoveCoffee.club</h3>
+      
+      <nav class="header-nav">
+        <div id="menu">Menu</div>
+        <div id="account">Account</div>
+      </nav>
+    </header>
+
+      <section id="search">
+        <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+          <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-17" viewBox="0 0 40 40">
+          <path d="M35.567 31.158L28.6 24.192c1.634-2.465 2.584-5.42 2.584-8.6C31.184 6.983 24.204 0 15.592 0 6.982 0 0 6.98 0 15.593c0 8.61 6.98 15.592 15.592 15.592 3.178 0 6.134-.95 8.6-2.583l10.24 10.24c1.173 1.175 3.077 1.174 4.252 0l.155-.156c1.18-1.182 1.175-3.08 0-4.254l-2.17-2.172-1.102-1.104v.002zm-1.103 1.102l-6.022-6.02c-.388-.39-1.024-.39-1.416.002l-.785.785c-.393.394-.393 1.027-.003 1.417l6.022 6.02 2.204-2.204zm1.103 1.103l2.488 2.488c.39.392.39 1.024-.003 1.418l-.785.785c-.393.392-1.028.392-1.417.004l-2.488-2.49 2.205-2.204zm-19.975-3.737c7.75 0 14.033-6.283 14.033-14.033 0-7.75-6.283-14.034-14.033-14.034C7.842 1.56 1.56 7.84 1.56 15.592c0 7.75 6.282 14.033 14.032 14.033zm0-25.728c-.645 0-1.284.053-1.912.156-.425.07-.713.47-.643.896.07.425.47.712.896.642.545-.09 1.1-.135 1.66-.135.43 0 .78-.35.78-.78 0-.43-.35-.78-.78-.78zm-5.31 1.273c-3.885 1.984-6.384 5.98-6.384 10.423 0 .43.35.78.78.78.43 0 .78-.35.78-.78 0-3.85 2.165-7.314 5.533-9.034.385-.196.537-.666.34-1.05-.195-.383-.664-.535-1.048-.34z"
+    fill-rule="evenodd" />
+          </symbol>
+          <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-5" viewBox="0 0 20 20">
+             <path d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10zm1.35-10.123l3.567 3.568-1.225 1.226-3.57-3.568-3.567 3.57-1.226-1.227 3.568-3.568-3.57-3.57 1.227-1.224 3.568 3.568 3.57-3.567 1.224 1.225-3.568 3.57zM10 18.272c4.568 0 8.272-3.704 8.272-8.272S14.568 1.728 10 1.728 1.728 5.432 1.728 10 5.432 18.272 10 18.272z"
+    fill-rule="evenodd" />
+          </symbol>
+        </svg>
+
+         <form novalidate="novalidate" onsubmit="return false;" class="searchbox search">
+           <div role="search" class="search-wrapper">
+             <input type="search" name="search" placeholder="Search your website" autocomplete="off" required="required" class="search-input">
+             <button type="submit" title="Submit your search query." class="search-submit">
+               <svg role="img" aria-label="Search">
+                 <use href="#sbx-icon-search-17"></use>
+               </svg>
+             </button>
+             <button type="reset" title="Clear the search query." class="search-reset">
+               <svg role="img" aria-label="Reset">
+                 <use href="#sbx-icon-clear-5"></use>
+               </svg>
+            </button>
+         </div>
+       </form>
+    </section>    
+    
+    <div class="products"></div>
+    
+    <div class="shopping-cart">
+      <div class="shopping-cart-head">
+        <span class="product-quantity">0</span><img src="images/shopping-basket.png">
+      </div>
+      <ul class="shopping-cart-list">
+      </ul>
+      <div class="cart-buttons">
+        <a class="button cart-checkout">Total: $<span class="total-price">0<a href="#0" class="button empty-cart-btn"><img src="images/recycling-bin.png"></a></span></a>
+      </div>
+      <div class="pay-button">Checkout securely</div>    
+
+    </div>
+    <div id="message"></div> 
+  </div>
+  
+  <script src="js/scripts.js"></script>
+  <script src="js/payment.js"></script>
+</body>
+</html>
+

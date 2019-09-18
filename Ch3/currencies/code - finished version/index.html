@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Handling Different Currencies with the Payment Request API</title>
+</head>
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <div>
+    <h1>Cart</h1>
+    <div id="currencies"><a id="usd" class="selected"><img src="images/united-states.png">USD</a> | <a id="gbp"><img src="images/united-kingdom.png">GBP</a></div>
+    <img src="images/chillis.png"/>
+
+    <h3 class="product">Product:<span>Bag of red chillis</span></h3>
+    <h3 class="price">Price:</h3>
+    <div class="currency">$</div><div id="unitcost">4.99</div>
+    <label for="amount">Quantity</label>
+    <input id="amount" type="number" value="0" min="0">
+    <h3 class="price">SubTotal:</h3>
+    <div class="currency">$</div><div id="subTotalText">0.00</div>
+    <button id="pay" class="pay-button">Buy Chillis</button>
+    <div id="message"></div>
+  </div>
+  <script src="js/payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookies and More.com | Cookies fresh from our oven !</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <div id="app" class="container">
+    <h2>Cookies - fresh from our oven!</h2>
+    <h3>All just 75￠ each</h3>
+    <div class="text-right"><span class="cartcount">{{cartItems.length}} item(s) in your basket</span></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3 text-center" v-for="item in items">
+          <div class="img"><img class="img-responsive" :src="item.image" alt=""></div>
+          <h5>{{ item.title }}</h5>
+          <p class="text-center">
+            <input v-model="item.qty" type="number" class="form-control" placeholder="Qty" min="1"/></p>                
+            <button @click="addToCart(item)" class="btn btn-sm btn-primary">Add</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <h4>Cart</h4>
+    <shopping-cart inline-template :items="cartItems">
+      <div>        
+        <div v-for="(item, index) in items" class="product">
+          <div class="producttitle">{{item.title}}</div>
+          <div style="width:150px">Quantity: <input v-model="item.qty" class="form-control input-qty" type="number"></div>
+          <div class="price">${{item.price | formatCurrency}}</div>
+          <div class="discard" @click="removeItem(index)"><span class="glyphicon glyphicon-trash"></span></div>
+        </div>  
+
+        <table class="table table-cart">
+          <tr v-show="items.length === 0">
+            <td colspan="4" class="text-center">Cart is empty</td>
+          </tr>
+          <tr v-show="items.length > 0">
+            <td class="blank"></td>
+            <td class="carttotal">Cart Total</td>
+            <td class="cartamt">{{Total | formatCurrency}}</td>            
+          </tr>
+        </table>
+
+        <div class="checkout-div" v-show="items.length > 0">
+          <button type="button" class="btn btn-default checkout" v-on:click="checkout">Checkout securely</button>
+        </div>
+
+        <div id="message"></div>
+
+        <div id="instructions">
+          <h2>Add delivery instructions</h2>
+          <p>Have any special requirements? You still have time to let us know:</p>
+          <textarea id="additional-details-container"></textarea>
+          <button id="delinstruct">Submit</button>
+        </div>
+
+      </div>
+    </shopping-cart>
+  </div>
+
+  <script src="js/vue.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBP0fi0IPlqpdhIEIk28xzN3a2_-u7PYI4"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.qrcode.min.js"></script>
+</body>
+</html>

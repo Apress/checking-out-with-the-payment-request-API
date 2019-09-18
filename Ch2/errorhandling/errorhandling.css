@@ -1,0 +1,49 @@
+#message { 
+  float: left; 
+  margin-top: 10px; 
+  width: 320px;  
+  display: none; 
+  padding: 10px; 
+  font-weight: bold; 
+  border-radius: 5px; 
+}
+
+#message.success { 
+  background-color: #ace1af; 
+  color: #008000;
+  display: block; 
+}
+
+#message.success > span { 
+  float: left; 
+  font-size: 30px; 
+  color: #008000; 
+  padding: 0px 10px;
+}
+
+#message.failure { 
+  background-color: #FFD1DC; 
+  color: #ff0000;
+  display: block; 
+}
+
+#message.failure > span { 
+  float: left; 
+  font-size: 30px; 
+  color: #ff0000; 
+  padding: 0px 10px; 
+}
+
+#message.info { 
+  background-color: #FCF75E; 
+  display: block; 
+  color: #000000; 
+  line-height: 20px; 
+}
+
+#message.info > span { 
+  float: left; 
+  font-size: 30px; 
+  color: #000000; 
+  padding: 0px 10px; 
+}

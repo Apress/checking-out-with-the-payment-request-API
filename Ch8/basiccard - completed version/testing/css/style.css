@@ -1,0 +1,114 @@
+body {
+  overflow: hidden;
+  font-family: montserrat, sans-serif;
+}
+
+div {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  border-bottom: 1px solid #000000;
+  margin-top: 0px;
+  padding: 10px;
+  background-color: #dcdcdc;
+}
+
+p { 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+img {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.error {
+  animation-duration: 0.5s;
+  animation-name: popup;
+  color: red;
+}
+
+@keyframes popup {
+  from {
+    margin-top: 20px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.error {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.error-hide {
+  animation-duration: 0.5s;
+  animation-name: popdown;
+  color: red;
+}
+
+@keyframes popdown {
+  to {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+
+.info {
+  color: green;
+}
+
+.warning {
+  background: yellow;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#spinner {
+  display: none;
+}
+
+#contents {
+  border: 1px solid #000000;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  height: 600px;
+}
+
+#contents > b {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#msg {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#installed,
+#installing,
+#uninstalling,
+#checking {
+  display: none;
+}
+
+#not-installed {
+  display: block;
+}
